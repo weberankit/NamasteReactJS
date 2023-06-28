@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useEffect ,useState } from "react";
 import { IMG_CDN_URL } from "./constant";
 import Shimmer from "./Shimmer";
-
+import { Menu_Api_Url } from "./constant";
 
 const RestaurantMenu=()=>{
    /*
@@ -19,15 +19,19 @@ const [restaurant,setRestaurant] = useState(null);
 
 
 
-
+//https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=
 
 useEffect(()=>{
 getRestaurantInfo();
 },[])
+
 async function getRestaurantInfo(){
-    const data= await fetch(
-        "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.1702401&lng=72.83106070000001&&submitAction=ENTER&restaurantId=" + resId
-    );
+   
+    const data = await fetch(
+      Menu_Api_Url+resId
+        
+      );
+      
     const json=await data.json();
     console.log(json.data)
   
@@ -39,21 +43,33 @@ if(!restaurant){
     return <Shimmer/>
 }
 
-
+const {name ,cuisines,costForTwoMessage}=restaurant?.cards[0]?.card?.card?.info;
+const {itemCards}=restaurant?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
+console.log(itemCards)
 
     return(
         <div className="menu">
         <div>
-            <h1>
-                
-            </h1>
-            <h2>{restaurant.name}</h2>
-          { // <img src={IMG_CDN_URL+restaurant.cloudinaryImageId}/>
-          }
-            <h2>{restaurant.city}</h2>
-            <h2>{restaurant.avgRating}</h2>
-            <h2>{restaurant.area}</h2>
-            <h2>{restaurant.costForTwoMsg}</h2>
+          
+           
+            <h2>{name}</h2>
+            <h2>{cuisines.join(",")}</h2>
+            <h2>{costForTwoMessage}</h2>
+            <h2>{}</h2>
+
+          <h1>MENU</h1>
+          <ul>
+        {itemCards.map((item)=>(
+
+         
+        <li key={item.card.info.id}>
+            {item.card.info.name}--{item.card.info.price/100}
+        </li>
+        
+        
+        ))}
+          </ul>
+
         </div>
         {
  /*         <div>
