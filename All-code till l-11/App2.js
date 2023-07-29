@@ -1,7 +1,7 @@
 import React from"react";
 import ReactDom from "react-dom/client";
-import "./style.css"
-//import myImage from './images/TREE.jpg';
+import "./style.css";
+import myImage from './images/TREE.jpg';
 
 const Header=()=>{
     return(
