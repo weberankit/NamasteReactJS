@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(103, 135, 243);
+}
+
+
+
+.img{
+    width:20px;
+   border-radius: 30%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 2em;
+    box-shadow: 10px 0px 60px 0px #fff;
+}
+input[type="text"]{
+    outline: none;
+    border: 0;
+    border-radius: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
