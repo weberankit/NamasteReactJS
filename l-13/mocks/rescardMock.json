@@ -1,0 +1,106 @@
+{
+    "id": "83459",
+    "name": "Kandoi Haribhai Damodar Mithaiwala",
+    "cloudinaryImageId": "qkyo2ugj77q1bbdzauq9",
+    "areaName": "Chembur",
+    "costForTwo": "₹400 for two",
+    "cuisines": [
+        "Indian",
+        "Sweets"
+    ],
+    "avgRating": 4.3,
+    "veg": true,
+    "feeDetails": {
+        "restaurantId": "83459",
+        "fees": [
+            {
+                "name": "BASE_DISTANCE",
+                "fee": 4400
+            },
+            {
+                "name": "BASE_TIME"
+            },
+            {
+                "name": "ANCILLARY_SURGE_FEE"
+            }
+        ],
+        "totalFee": 4400
+    },
+    "parentId": "114538",
+    "avgRatingString": "4.3",
+    "totalRatingsString": "5K+",
+    "sla": {
+        "deliveryTime": 22,
+        "lastMileTravel": 3,
+        "serviceability": "SERVICEABLE",
+        "slaString": "22 mins",
+        "lastMileTravelString": "3.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+    },
+    "availability": {
+        "nextCloseTime": "2023-09-25 13:45:00",
+        "opened": true
+    },
+    "badges": {
+        "imageBadges": [
+            {
+                "imageId": "v1695133679/badges/Pure_Veg111.png",
+                "description": "pureveg"
+            }
+        ],
+        "textExtendedBadges": [
+            {
+                "iconId": "guiltfree/GF_Logo_android_3x",
+                "shortDescription": "options available",
+                "fontColor": "#7E808C"
+            }
+        ]
+    },
+    "isOpen": true,
+    "aggregatedDiscountInfoV2": {},
+    "type": "F",
+    "badgesV2": {
+        "entityBadges": {
+            "imageBased": {
+                "badgeObject": [
+                    {
+                        "attributes": {
+                            "description": "pureveg",
+                            "imageId": "v1695133679/badges/Pure_Veg111.png"
+                        }
+                    }
+                ]
+            },
+            "textBased": {},
+            "textExtendedBadges": {
+                "badgeObject": [
+                    {
+                        "attributes": {
+                            "description": "",
+                            "fontColor": "#7E808C",
+                            "iconId": "guiltfree/GF_Logo_android_3x",
+                            "shortDescription": "options available"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "orderabilityCommunication": {
+        "title": {},
+        "subTitle": {},
+        "message": {},
+        "customIcon": {}
+    },
+    "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+        }
+    },
+    "reviewsSummary": {},
+    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    "restaurantOfferPresentationInfo": {}
+}
